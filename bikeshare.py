@@ -17,10 +17,10 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s explore some US bikeshare data together!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
-        city = input("What\'s the city you want to analyze? You can choose between chicago, new york city, washington.\n").lower()
+        city = input("What\'s the city you want to analyze? You can choose between chicago, new york city or washington.\n").lower()
         if city in ('chicago', 'new york city', 'washington'):
             break
         else:
@@ -28,7 +28,7 @@ def get_filters():
 
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
-        month = input("What\'s month you want to analyze? You can choose between january, february, march, april, may, june or all.\n").lower()
+        month = input("What\'s month you want to analyze? You can choose between january, february, march, april, may, june or all of them. If you want to analyze, type all.\n").lower()
         if month in ('all', 'january', 'february', 'march', 'april', 'may', 'june'):
             break
         else:
@@ -90,10 +90,10 @@ def time_stats(df):
     start_time = time.time()
 
     # TO DO: display the most common month
-    com_month_num = df['month'].mode()
+    common_month_num = df['month'].mode()
     months = ['january', 'february', 'march', 'april', 'may', 'june']
-    com_month = months[int(com_month_num - 1)].title()
-    print("The most common month for rides: ", com_month)
+    common_month = months[int(common_month_num - 1)].title()
+    print("The most common month for rides: ", common_month)
 
     # TO DO: display the most common day of week
     common_week_day = df['day_of_week'].mode()[0]
