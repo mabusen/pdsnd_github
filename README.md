@@ -1,15 +1,12 @@
-### Date created
-Include the date you created this project and README file.
+2020-05-01
 
-### Project Title
-Replace the Project Title
+bikeshare.py
 
-### Description
-Describe what your project is about and what it does
+This is a project that was part of the programming for data science with python nanodegree. It's a script that analyze bikeshare data and allows a user to analyze this data by interacting with the terminal.
 
-### Files used
-Include the files used
+We're using three csv files:
+chicago.csv
+new_york_city.csv
+washington.csv
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+The udacity course as well as the python documentation helped me writing this scricpt. 
