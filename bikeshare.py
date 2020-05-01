@@ -88,10 +88,10 @@ def time_stats(df):
     start_time = time.time()
 
     # TO DO: display the most common month
-    com_month_num = df['month'].mode()
+    common_month_num = df['month'].mode()
     months = ['january', 'february', 'march', 'april', 'may', 'june']
-    com_month = months[int(com_month_num - 1)].title()
-    print("The most common month for rides: ", com_month)
+    common_month = months[int(common_month_num - 1)].title()
+    print("The most common month for rides: ", common_month)
 
     # TO DO: display the most common day of week
     common_week_day = df['day_of_week'].mode()[0]
