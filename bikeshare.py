@@ -182,6 +182,8 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+#Defining a function that allows the user to restart the flow
+
 def restart():
     """Allows users to choose to restart or quit tool"""
     restart = input('\nWould you like to restart? Enter yes or no.\n')
